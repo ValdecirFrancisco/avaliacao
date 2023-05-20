@@ -7,3 +7,8 @@ export async function GET(){
     console.log("acessou o get....")
 
 }
+export async function POST(){
+        console.log("acessou o get....")
+        return NextResponse.json({sucess:"ok"})
+
+}
