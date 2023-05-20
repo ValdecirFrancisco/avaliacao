@@ -9,3 +9,7 @@ export async function addCoordinator(name:string, email:string) {
     await sql`INSERT INTO coordinator(name, email) VALUES (${name}, ${email})`;
     
 }
+export async function deleteCoordinator(id:string) {
+    await sql`DELETE FROM coordinator WHERE id=${id}`;
+    
+}
