@@ -5,3 +5,7 @@ export async function getAllCoordinator() {
     return coordinators
     
 }
+export async function addCoordinator(name:string, email:string) {
+    await sql`INSERT INTO coordinator(name, email) VALUES (${name}, ${email})`;
+    
+}

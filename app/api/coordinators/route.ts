@@ -1,4 +1,4 @@
-import { getAllCoordinator } from "@/app/model/CoordinatorService"
+import { getAllCoordinator, addCoordinator} from "@/app/model/CoordinatorService"
 import { NextResponse } from "next/server"
 
 export async function GET(){
@@ -7,8 +7,11 @@ export async function GET(){
     console.log("acessou o get....")
 
 }
-export async function POST(){
-        console.log("acessou o get....")
+export async function POST(request:Request){
+        console.log("acessou o POST....")
+        const coordinator= await request.json()
+        console.log(coordinator)
+        addCoordinator(coordinator.name, coordinator.email)
         return NextResponse.json({sucess:"ok"})
 
 }
