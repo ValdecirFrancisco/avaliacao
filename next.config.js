@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    experimental:{
-        appDir:true,
-        serverActions: true,
-    },
+const nextConfig = {    
     async headers() {
     return [
       {
