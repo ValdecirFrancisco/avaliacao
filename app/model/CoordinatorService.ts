@@ -13,3 +13,10 @@ export async function deleteCoordinator(id:string) {
     await sql`DELETE FROM coordinator WHERE id=${id}`;
     
 }
+export async function getCoordinatorById(id:string) {
+   const {rows:coordinators} = await sql`SELECT * FROM coordinator WHERE id=(${id})`
+   return coordinators[0]
+}
+export async function updateCoordinatorById(id:string, name:string, email:string) {
+    await sql `UPDATE coordinator SET name=${name}, email =${email} WHERE id=${id}`
+ }
