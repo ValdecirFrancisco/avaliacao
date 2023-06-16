@@ -1,5 +1,7 @@
 import { getAllCoordinator } from "@/app/model/CoordinatorService"
 
+export const revalidate = 0
+
 export default async function CoordinatorPage() {
     const coordinators = await getAllCoordinator()
     return (
