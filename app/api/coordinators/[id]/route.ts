@@ -1,9 +1,9 @@
-import { deleteCoordinator, getCoordinatorById, updateCoordinatorById } from "@/app/model/CoordinatorService"
+import { deleteCoordinatorById, getCoordinatorById, updateCoordinatorById } from "@/app/model/CoordinatorService"
 import { NextResponse } from "next/server"
 
 export async function DELETE(request:Request, {params}:any) {
     console.log(params.id)
-    deleteCoordinator(params.id)
+    deleteCoordinatorById(params.id)
     return NextResponse.json({sucess:"ok"})
 }
 export async function GET(request:Request, {params}:any) {    

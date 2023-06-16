@@ -15,7 +15,7 @@ export default async function CoordinatorPage() {
                 </thead>
                 <tbody>
                     {coordinators.map(coordinator => (
-                            <tr key= {coordinator.id}><td>{coordinator.name}</td> <td>{coordinator.email}</td> <td><a href="/admin/coordinator/edit">Editar</a></td></tr>
+                            <tr key= {coordinator.id}><td>{coordinator.name}</td> <td>{coordinator.email}</td> <td><a href={`/admin/coordinator/edit?id=${coordinator.id}`}>Editar</a></td></tr>
                         ))}
                 </tbody>
             </table>
