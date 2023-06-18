@@ -6,11 +6,11 @@ export async function getAllDiscipline() {
     
 }
 export async function addDiscipline(name:string, description:string) {
-    await sql`INSERT INTO coordinator(name, description) VALUES (${name}, ${description})`;
+    await sql`INSERT INTO discipline(name, description) VALUES (${name}, ${description})`;
     
 }
 export async function deleteDisciplineById(id:string) {
-    await sql`DELETE FROM coordinator WHERE id=${id}`;
+    await sql`DELETE FROM discipline WHERE id=${id}`;
     
 }
 export async function getDisciplineById(id:string) {
@@ -18,5 +18,5 @@ export async function getDisciplineById(id:string) {
    return disciplines[0]
 }
 export async function updateDisciplineById(id:string, name:string, description:string) {
-    await sql `UPDATE coordinator SET name=${name}, email =${description} WHERE id=${id}`
+    await sql `UPDATE discipline SET name=${name}, description =${description} WHERE id=${id}`
  }
