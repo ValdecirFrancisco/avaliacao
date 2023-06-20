@@ -1,5 +1,6 @@
 import Aside from "../components/aside"
 import Nav from "../components/nav"
+import Footer from "../components/footer"
 
 export default function RootLayout({
   children,
@@ -14,6 +15,9 @@ export default function RootLayout({
         <div className="w-full">
           {children}
         </div>
+      </div>
+      <div className="w-full">
+        <Footer />        
       </div>
 
     </div>

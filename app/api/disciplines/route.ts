@@ -10,7 +10,7 @@ export async function GET(){
 export async function POST(request:Request){        
         const discipline= await request.json()
         console.log(discipline)
-        addDiscipline(discipline.name, discipline.descriptin)
+        addDiscipline(discipline.name, discipline.description)
         return NextResponse.json({sucess:"ok"})
         console.log("acessou o POST....")
 
