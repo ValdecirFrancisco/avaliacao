@@ -17,7 +17,7 @@ export default function RootLayout({
         </div>
       </div>
       <div className="fixed bottom-0 left-0 w-full">
-        <Footer />        
+        <Footer />
       </div>
 
     </div>

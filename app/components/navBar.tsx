@@ -17,7 +17,7 @@ export default () => {
         <nav className="bg-white border-b w-full md:static md:text-sm md:border-none">
             <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                    
+
                     <div className="md:hidden">
                         <button className="text-gray-500 hover:text-gray-800"
                             onClick={() => setState(!state)}
