@@ -1,6 +1,6 @@
-import Aside from "../components/aside"
-import Nav from "../components/nav"
 import Footer from "../components/footer"
+import Sidebar from "../components/sideBar"
+import Navbar from "../components/navBar"
 
 export default function RootLayout({
   children,
@@ -9,14 +9,14 @@ export default function RootLayout({
 }) {
   return (
     <div className="md:container md:mx-auto">
-      <Nav />
+      <Navbar />
       <div className="flex">
-        <Aside />
-        <div className="w-full">
+        <Sidebar />
+        <div className="w-full flex justify-center mt-4">
           {children}
         </div>
       </div>
-      <div className="w-full">
+      <div className="fixed bottom-0 left-0 w-full">
         <Footer />        
       </div>
 

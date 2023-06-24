@@ -1,3 +1,4 @@
+"use client"
 export default function Footer() {
     return (
 
@@ -8,7 +9,7 @@ export default function Footer() {
             <div className="py-4 text-sm border-t border-slate-900 bg-slate-700">
                 <div className="container px-6 mx-auto">
                     <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
-                        <div className="col-span-2 md:col-span-4 lg:col-span-6">Copyright 2022 Brand</div>
+                        <div className=" text-center col-span-2 md:col-span-4 lg:col-span-6">₢ Copyright UTFPR 2023-1 by Alunos de web | all rights reserved!</div>
                         <nav aria-labelledby="footer-social-links-dark" className="col-span-2 text-right md:col-span-4 lg:col-span-6">
                             <h2 className="sr-only" id="footer-social-links-dark">Social Media Links</h2>
                             <ul className="flex items-center justify-end gap-4">
