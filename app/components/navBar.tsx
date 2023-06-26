@@ -1,9 +1,8 @@
 "use client"
-import { useState } from 'react'
+import React, { useState } from 'react';
 
-export default () => {
-
-    const [state, setState] = useState(false)
+const Navbar = () => {
+    const [state, setState] = useState(false);
 
     // Replace javascript:void(0) paths with your paths
     const navigation = [
@@ -68,3 +67,4 @@ export default () => {
         </nav>
     )
 }
+export default Navbar;
